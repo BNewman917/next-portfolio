@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const FooterWrapper = styled.section`
     width: calc(100vw - 96px);
     max-width: 1040px;
-    padding: 2rem 48px 40px;
+    padding: 2rem 48px 0.5rem;
     margin: 1rem auto;
     box-sizing: content-box;
 
@@ -45,7 +45,14 @@ export const LinkItem = styled.a`
 export const SocialIconsContainer = styled.div`
     max-width: 1040px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    ${
+        "" /* background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(148, 92, 215, 0.4) 0%,
+        rgba(22, 25, 40, 0) 100%
+    ); */
+    }
 
     @media ${(props) => props.theme.breakpoints.md} {
         display: flex;
@@ -101,6 +108,7 @@ export const Slogan = styled.p`
 export const SocialContainer = styled.div`
     display: flex;
     align-items: center;
+    gap: 2rem;
 
     @media ${(props) => props.theme.breakpoints.md} {
         justify-content: center;

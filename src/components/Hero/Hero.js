@@ -8,9 +8,7 @@ const Hero = () => (
     <Section column nopadding>
         <SectionTitle>Brent Newman</SectionTitle>
         <AvatarCard />
-        <SectionTitle>
-            <TextGradient>Web Developer</TextGradient>
-        </SectionTitle>
+        <TextGradient>Web Developer</TextGradient>
         <SectionText>
             I'm a full-stack web developer with a passion for being at work on
             time and feeding my family.

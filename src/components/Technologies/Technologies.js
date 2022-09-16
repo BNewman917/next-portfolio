@@ -1,45 +1,33 @@
 import React from "react";
-import { DiFirebase, DiReact, DiZend } from "react-icons/di";
 import {
     Section,
     SectionDivider,
-    SectionText,
     SectionTitle,
 } from "../../styles/GlobalComponents";
 import {
     ImageContainer,
     List,
-    ListContainer,
     ListItem,
     ListParagraph,
-    ListTitle,
+    Icon,
 } from "./TechnologiesStyles";
 import { technologies } from "../../constants/constants";
 
-const Technologies = () => (
+const Technologies = ({}) => (
     <Section id="tech">
         <SectionDivider />
         <br />
-        <SectionTitle>Technologies</SectionTitle>
-        <SectionText>
-            I have worked with a range of technologies and frameworks,
-            including:
-        </SectionText>
+        <SectionTitle>Technologies | Skills</SectionTitle>
         <ImageContainer>
-            <List></List>
+            <List>
+                {technologies.map(({ icon, text }) => (
+                    <ListItem key={text}>
+                        <Icon>{icon}</Icon>
+                        <ListParagraph>{text}</ListParagraph>
+                    </ListItem>
+                ))}
+            </List>
         </ImageContainer>
-        <List>
-            <ListItem>
-                <DiReact size="5rem" />
-                <ListContainer>
-                    <ListTitle>Front-End</ListTitle>
-                    <ListParagraph>
-                        Experience with: <br />
-                        HTML <br /> CSS <br /> JavaScript <br /> React.js
-                    </ListParagraph>
-                </ListContainer>
-            </ListItem>
-        </List>
     </Section>
 );
 

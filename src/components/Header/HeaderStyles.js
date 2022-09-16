@@ -5,8 +5,7 @@ export const Container = styled.div`
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 2rem;
-    padding: 1rem;
-    padding-top: 2rem;
+    padding: 2rem 1rem;
 
     @media ${(props) => props.theme.breakpoints.lg} {
         grid-column-gap: 0.5rem;
@@ -15,6 +14,7 @@ export const Container = styled.div`
     @media ${(props) => props.theme.breakpoints.sm} {
         grid-template-columns: repeat(3, 1fr);
         margin-bottom: 1rem;
+        padding: 1rem 0.5rem;
     }
     @media ${(props) => props.theme.breakpoints.xs} {
         grid-template-columns: repeat(1, 1fr);

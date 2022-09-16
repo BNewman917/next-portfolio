@@ -57,43 +57,49 @@ export const timeline = [
 
 export const technologies = [
     {
-        icon: <SiMongodb size={30} />,
+        icon: (
+            <SiMongodb
+                size={36}
+                href="https://www.mongodb.com/"
+                target="_blank"
+            />
+        ),
         text: `MongoDB`,
     },
     {
-        icon: <SiExpress size={30} />,
+        icon: <SiExpress size={36} />,
         text: `ExpressJS`,
     },
     {
-        icon: <FaReact size={30} />,
+        icon: <FaReact size={36} />,
         text: `ReactJS`,
     },
     {
-        icon: <FaNodeJs size={30} />,
+        icon: <FaNodeJs size={36} />,
         text: `NodeJS`,
     },
     {
-        icon: <TbBrandNextjs size={30} />,
+        icon: <TbBrandNextjs size={36} />,
         text: `NextJS`,
     },
     {
-        icon: <AiOutlineHtml5 size={30} />,
+        icon: <AiOutlineHtml5 size={36} />,
         text: `HTML`,
     },
     {
-        icon: <IoLogoCss3 size={30} />,
+        icon: <IoLogoCss3 size={36} />,
         text: `CSS`,
     },
     {
-        icon: <IoLogoJavascript size={30} />,
+        icon: <IoLogoJavascript size={36} />,
         text: `JavaScript`,
     },
     {
-        icon: <FaGitAlt size={30} />,
+        icon: <FaGitAlt size={36} />,
         text: `Git`,
     },
     {
-        icon: <AiOutlineCloudServer size={30} />,
+        icon: <AiOutlineCloudServer size={36} />,
         text: `Rest API`,
     },
 ];

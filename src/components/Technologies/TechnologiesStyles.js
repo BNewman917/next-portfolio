@@ -3,17 +3,30 @@ import styled from "styled-components";
 export const ImageContainer = styled.div`
     text-align: center;
     background-image: radial-gradient(
-        50% 50% at 50% 50%,
-        rgba(79, 108, 176, 0.25) 53.8%,
-        rgba(79, 108, 176, 0) 100%
-    );
+            37% 22% at 30% 50%,
+            rgba(152, 66, 255, 0.25) 20%,
+            rgba(148, 92, 215, 0.15) 42%,
+            rgba(22, 25, 40, 0) 100%
+        ),
+        radial-gradient(
+            50% 22% at 50% 50%,
+            rgba(255, 255, 255, 0.22) 20%,
+            rgba(255, 255, 255, 0.15) 42%,
+            rgba(22, 25, 40, 0) 100%
+        ),
+        radial-gradient(
+            37% 22% at 70% 50%,
+            rgba(35, 173, 252, 0.25) 20%,
+            rgba(56, 149, 203, 0.15) 42%,
+            rgba(22, 25, 40, 0) 100%
+        );
     width: 100%;
-    padding: 60px;
-    margin-top: 48px;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: visible;
 
     @media ${(props) => props.theme.breakpoints.lg} {
         background-image: none;
@@ -29,10 +42,10 @@ export const ImageContainer = styled.div`
 
 export const List = styled.ul`
     list-style-type: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: 40px;
     margin: 3rem 0;
+    display: flex;
+    flex-direction: row;
 
     @media ${(props) => props.theme.breakpoints.lg} {
         margin: 64px 0;
@@ -44,10 +57,34 @@ export const List = styled.ul`
     }
 
     @media ${(props) => props.theme.breakpoints.sm} {
-        display: flex;
-        flex-direction: column;
         margin: 32px 0;
     }
+`;
+
+export const ListItem = styled.li`
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:hover {
+        transform: translateY(-5px) scale(1.1);
+        transition: all 0.2s ease-in-out;
+    }
+
+    @media ${(props) => props.theme.breakpoints.md} {
+        max-width: 203px;
+    }
+
+    @media ${(props) => props.theme.breakpoints.sm} {
+        margin-bottom: 14px;
+        max-width: 320px;
+        flex-direction: row;
+    }
+`;
+
+export const Icon = styled.a`
+    height: 36px;
+    width: 36px;
 `;
 
 export const ListContainer = styled.div`
@@ -94,22 +131,6 @@ export const ListParagraph = styled.p`
     @media ${(props) => props.theme.breakpoints.sm} {
         font-size: 14px;
         line-height: 22px;
-    }
-`;
-
-export const ListItem = styled.li`
-    max-width: 320px;
-    display: flex;
-    flex-direction: column;
-
-    @media ${(props) => props.theme.breakpoints.md} {
-        max-width: 203px;
-    }
-
-    @media ${(props) => props.theme.breakpoints.sm} {
-        margin-bottom: 14px;
-        max-width: 320px;
-        flex-direction: row;
     }
 `;
 

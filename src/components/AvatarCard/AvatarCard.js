@@ -6,22 +6,9 @@ const AvatarCard = () => {
         <Wrapper>
             <Shadow />
             <Background>
-                <Avatar
-                    style={{
-                        height: "100%",
-                        width: "100%",
-                        transform: "translateY(10px)",
-                    }}
-                    avatarStyle="Transparent"
-                    topType="NoHair"
-                    accessoriesType="Prescription02"
-                    facialHairType="BeardMedium"
-                    facialHairColor="Auburn"
-                    clotheType="BlazerShirt"
-                    eyeType="Happy"
-                    eyebrowType="RaisedExcited"
-                    mouthType="Smile"
-                    skinColor="Light"
+                <img
+                    src="https://avataaars.io/?avatarStyle=Transparent&topType=NoHair&accessoriesType=Prescription02&facialHairType=BeardMedium&facialHairColor=Auburn&clotheType=BlazerShirt&eyeType=Happy&eyebrowType=RaisedExcited&mouthType=Smile&skinColor=Light"
+                    style={{ width: "100%", height: "100%" }}
                 />
             </Background>
         </Wrapper>

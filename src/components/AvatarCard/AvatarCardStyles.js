@@ -22,7 +22,7 @@ export const Shadow = styled.div`
     position: absolute;
     z-index: -1;
     top: 7px;
-    animation: 15s ease-in-out infinite alternate glow;
+    animation: 10s ease-in-out infinite alternate glow;
     @keyframes glow {
         0%,
         100% {
@@ -60,7 +60,7 @@ export const Background = styled.div`
     );
     border: 3px solid #e1e2e3;
     overflow: hidden;
-    animation: 15s ease-in-out infinite alternate bounce;
+    animation: 10s ease-in-out infinite alternate bounce;
     @keyframes bounce {
         0%,
         100% {

@@ -7,9 +7,12 @@ export const Container = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     padding: 0 1.5rem 0 3.5rem;
-    gap: 3rem;
+    gap: 6rem;
+    margin: 2rem 0;
+    background: transparent;
+
     @media ${(props) => props.theme.breakpoints.md} {
         padding: 0 1.5rem;
     }
