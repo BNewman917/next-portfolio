@@ -7,6 +7,24 @@ export const FooterWrapper = styled.section`
     margin: 1rem auto;
     box-sizing: content-box;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: radial-gradient(
+            30% 20% at 30% 100%,
+            rgba(152, 66, 255, 0.25) 20%,
+            rgba(148, 92, 215, 0.15) 42%,
+            rgba(22, 25, 40, 0) 100%
+        ),
+        radial-gradient(
+            50% 22% at 50% 100%,
+            rgba(255, 255, 255, 0.22) 20%,
+            rgba(255, 255, 255, 0.15) 42%,
+            rgba(22, 25, 40, 0) 100%
+        ),
+        radial-gradient(
+            30% 20% at 70% 100%,
+            rgba(35, 173, 252, 0.25) 20%,
+            rgba(56, 149, 203, 0.15) 42%,
+            rgba(22, 25, 40, 0) 100%
+        );
 
     @media ${(props) => props.theme.breakpoints.sm} {
         padding: 0 16px 48px;
@@ -122,6 +140,7 @@ export const SocialIconsContainer = styled.div`
 export const SocialContainer = styled.div`
     display: flex;
     align-items: center;
+    margin-top: 5rem;
     gap: 2rem;
 
     @media ${(props) => props.theme.breakpoints.md} {

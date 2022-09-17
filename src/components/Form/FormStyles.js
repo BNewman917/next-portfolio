@@ -31,10 +31,6 @@ export const ContactLabel = styled.label`
     font-weight: 300;
 `;
 
-export const Required = styled.span`
-    color: #ef4444;
-`;
-
 export const ContactInput = styled.input`
     height: 30px;
     width: 77%;
@@ -68,7 +64,7 @@ export const ButtonWrapper = styled.div`
 
 export const ContactButton = styled.button`
     display: flex;
-    padding: 0.5rem 2rem;
+    padding: 0.7rem 2rem;
     color: #e1e2e3;
     font-size: 18px;
     line-height: 1.75rem;
@@ -76,11 +72,11 @@ export const ContactButton = styled.button`
     flex-direction: row;
     align-items: center;
     border-radius: 1rem;
-    background: radial-gradient(
-        100% 75% at 50% 50%,
-        #12afc8 0%,
-        #667ad1 42%,
-        #6979d2 60%,
-        #7d6cd4 90%
-    );
+    background: #6b3030;
+    cursor: pointer;
+
+    &:hover {
+        transform: translateY(-3px) scale(1.1);
+        transition: all 0.2s ease-in-out;
+    }
 `;

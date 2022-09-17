@@ -86,7 +86,7 @@ const Form = () => {
                     type="text"
                     name="message"
                     value={message}
-                    placeholder="Message"
+                    placeholder="Message..."
                     {...register("Message", {
                         required: true,
                         onChange: (e) => setMessage(e.target.value),

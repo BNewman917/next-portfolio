@@ -120,6 +120,8 @@ export const ExternalLinks = styled.a`
     transition: 0.5s;
     &:hover {
         background: #801414;
+        transform: translateY(-4px) scale(1.1);
+        transition: all 0.2s ease-in-out;
     }
 `;
 

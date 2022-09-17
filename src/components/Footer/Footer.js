@@ -19,12 +19,14 @@ const Footer = () => {
         <FooterWrapper id="contact">
             <LinkList>
                 <LinkColumn>
-                    <LinkTitle>Call:</LinkTitle>
-                    <LinkItem href="tel:405-823-0368">405-823-0368</LinkItem>
+                    <LinkTitle>Info:</LinkTitle>
+                    <LinkItem>"------------------"</LinkItem>
                     <LinkTitle>Email:</LinkTitle>
                     <LinkItem href="mailto:brentnewman917@gmail.com">
                         brentnewman917@gmail.com
                     </LinkItem>
+                    <LinkTitle>Info:</LinkTitle>
+                    <LinkItem>"------------------"</LinkItem>
                 </LinkColumn>
                 <Form />
             </LinkList>
