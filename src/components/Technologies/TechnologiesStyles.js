@@ -2,22 +2,27 @@ import styled from "styled-components";
 
 export const ImageContainer = styled.div`
     text-align: center;
-    background-image: radial-gradient(
+    background: radial-gradient(
             37% 22% at 30% 50%,
-            rgba(152, 66, 255, 0.25) 20%,
-            rgba(148, 92, 215, 0.15) 42%,
+            rgba(148, 92, 215, 0.4) 0%,
+            rgba(122, 79, 180, 0.35) 20%,
+            rgba(94, 65, 142, 0.25) 42%,
+            rgba(71, 52, 111, 0.2) 60%,
             rgba(22, 25, 40, 0) 100%
         ),
         radial-gradient(
             50% 22% at 50% 50%,
-            rgba(255, 255, 255, 0.22) 20%,
-            rgba(255, 255, 255, 0.15) 42%,
+            rgba(255, 255, 255, 0.25) 0%,
+            rgba(208, 209, 212, 0.2) 20%,
+            rgba(157, 159, 165, 0.15) 42%,
             rgba(22, 25, 40, 0) 100%
         ),
         radial-gradient(
             37% 22% at 70% 50%,
-            rgba(35, 173, 252, 0.25) 20%,
-            rgba(56, 149, 203, 0.15) 42%,
+            rgba(56, 149, 203, 0.35) 0%,
+            rgba(49, 124, 170, 0.3) 20%,
+            rgba(42, 97, 134, 0.25) 42%,
+            rgba(36, 42, 105, 0.2) 60%,
             rgba(22, 25, 40, 0) 100%
         );
     width: 100%;
@@ -29,12 +34,10 @@ export const ImageContainer = styled.div`
     overflow: visible;
 
     @media ${(props) => props.theme.breakpoints.lg} {
-        background-image: none;
         padding: 0;
         margin-top: 40px;
     }
     @media ${(props) => props.theme.breakpoints.md} {
-        background-image: none;
         padding: 0;
         margin-top: 16px;
     }
@@ -46,6 +49,9 @@ export const List = styled.ul`
     margin: 3rem 0;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
     @media ${(props) => props.theme.breakpoints.lg} {
         margin: 64px 0;

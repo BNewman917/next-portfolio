@@ -4,31 +4,29 @@ import { ImProfile } from "react-icons/im";
 
 import { SocialIcons } from "../Header/HeaderStyles";
 import {
-    CompanyContainer,
     FooterWrapper,
     LinkColumn,
     LinkItem,
     LinkList,
     LinkTitle,
-    Slogan,
     SocialContainer,
     SocialIconsContainer,
 } from "./FooterStyles";
+import Form from "../Form/Form";
 
 const Footer = () => {
     return (
         <FooterWrapper id="contact">
             <LinkList>
                 <LinkColumn>
-                    <LinkTitle>Call</LinkTitle>
+                    <LinkTitle>Call:</LinkTitle>
                     <LinkItem href="tel:405-823-0368">405-823-0368</LinkItem>
-                </LinkColumn>
-                <LinkColumn>
-                    <LinkTitle>Email</LinkTitle>
+                    <LinkTitle>Email:</LinkTitle>
                     <LinkItem href="mailto:brentnewman917@gmail.com">
                         brentnewman917@gmail.com
                     </LinkItem>
                 </LinkColumn>
+                <Form />
             </LinkList>
             <SocialIconsContainer>
                 <SocialContainer>
