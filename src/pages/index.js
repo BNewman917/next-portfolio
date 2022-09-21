@@ -4,9 +4,10 @@ import Gradient1 from "../styles/GlobalComponents/Gradient1";
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 import Technologies from "../components/Technologies/Technologies";
 import { Layout } from "../layout/Layout";
-import Form from "../components/Form/Form";
-
+import Resume from "../components/Resume/Resume";
+import { useStateContext } from "../context/StateContext";
 const Home = () => {
+    const { show } = useStateContext();
     return (
         <Layout>
             <Hero />
@@ -14,6 +15,7 @@ const Home = () => {
             <ProjectCard />
             <Technologies />
             <Acomplishments />
+            {show && <Resume />}
         </Layout>
     );
 };

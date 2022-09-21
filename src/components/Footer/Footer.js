@@ -1,5 +1,6 @@
-import React from "react";
-import { AiFillGithub, AiFillLinkedin, AiFillFile } from "react-icons/ai";
+import React, { useState } from "react";
+import { useStateContext } from "../../context/StateContext";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { ImProfile } from "react-icons/im";
 
 import { SocialIcons } from "../Header/HeaderStyles";
@@ -9,12 +10,19 @@ import {
     LinkItem,
     LinkList,
     LinkTitle,
+    ResumeIcon,
     SocialContainer,
     SocialIconsContainer,
 } from "./FooterStyles";
 import Form from "../Form/Form";
 
 const Footer = () => {
+    const { show, setShow } = useStateContext();
+
+    const resumeClick = () => {
+        setShow(true);
+    };
+
     return (
         <FooterWrapper id="contact">
             <LinkList>
@@ -38,12 +46,9 @@ const Footer = () => {
                     <SocialIcons href="https://linkedin.com">
                         <AiFillLinkedin size="3rem" />
                     </SocialIcons>
-                    <SocialIcons
-                        href="../../constants/Brent_Newman_Resume.pdf"
-                        download
-                    >
+                    <ResumeIcon onClick={resumeClick}>
                         <ImProfile size="2.7rem" />
-                    </SocialIcons>
+                    </ResumeIcon>
                 </SocialContainer>
             </SocialIconsContainer>
         </FooterWrapper>

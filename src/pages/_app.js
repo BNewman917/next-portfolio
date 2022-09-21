@@ -1,11 +1,14 @@
 import Theme from "../styles/theme";
+import { StateContext } from "../context/StateContext";
 
-export default function App({ Component, pageProps }) {
+function App({ Component, pageProps }) {
     return (
-        <>
+        <StateContext>
             <Theme>
                 <Component {...pageProps} />
             </Theme>
-        </>
+        </StateContext>
     );
 }
+
+export default App;

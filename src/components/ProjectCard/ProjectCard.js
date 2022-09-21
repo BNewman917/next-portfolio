@@ -43,13 +43,13 @@ const ProjectCard = () => (
                             <UtilityList>
                                 <UtilityWrap>
                                     <ExternalLinks href={visit} target="_blank">
-                                        Code
+                                        Demo
                                     </ExternalLinks>
                                     <ExternalLinks
                                         href={source}
                                         target="_blank"
                                     >
-                                        Demo
+                                        Code
                                     </ExternalLinks>
                                 </UtilityWrap>
                             </UtilityList>

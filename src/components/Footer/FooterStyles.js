@@ -27,7 +27,7 @@ export const FooterWrapper = styled.section`
         );
 
     @media ${(props) => props.theme.breakpoints.sm} {
-        padding: 0 16px 48px;
+        padding: 0 16px 0;
         width: calc(100vw - 32px);
     }
 `;
@@ -127,25 +127,35 @@ export const SocialIconsContainer = styled.div`
 
     @media ${(props) => props.theme.breakpoints.md} {
         display: flex;
-        justify-content: space-between;
-    }
-
-    @media ${(props) => props.theme.breakpoints.sm} {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
     }
 `;
 
 export const SocialContainer = styled.div`
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 5rem;
     gap: 2rem;
+`;
 
-    @media ${(props) => props.theme.breakpoints.md} {
-        justify-content: center;
-        padding-right: 16px;
-        flex-wrap: wrap;
+export const Resume = styled.div`
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 99999;
+    transition: all 1s ease-in-out;
+`;
+
+export const ResumeIcon = styled.div`
+    transition: 0.3s ease;
+    color: white;
+    border-radius: 50px;
+    padding: 8px;
+    &:hover {
+        background-color: #212d45;
+        transform: scale(1.2);
+        cursor: pointer;
     }
 `;
