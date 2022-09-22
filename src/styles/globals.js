@@ -18,17 +18,6 @@ const GlobalStyles = createGlobalStyle`
     font-family: ${(props) => props.theme.fonts.main};
     font-size: 1.6rem;
     background: ${(props) => props.theme.colors.background1};
-    ${
-        "" /* radial-gradient(
-        50% 95% at 25% bottom,
-        rgba(229, 106, 179, 0.4) 0%,
-        rgba(239, 135, 190, 0.32) 10%,
-        rgba(249, 163, 203, 0.24) 20%,
-        rgba(252, 188, 215, 0.16) 30%,
-        rgba(255, 206, 230, 0.08) 40%,
-        rgba(12, 15, 26, 0) 100%
-    ) */
-    }
     color: ${(props) => props.theme.colors.primary1};
     cursor: default;
 
