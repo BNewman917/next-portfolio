@@ -17,7 +17,7 @@ import {
 import Form from "../Form/Form";
 
 const Footer = () => {
-    const { show, setShow } = useStateContext();
+    const { setShow } = useStateContext();
 
     const resumeClick = () => {
         setShow(true);
@@ -26,7 +26,7 @@ const Footer = () => {
     return (
         <FooterWrapper id="contact">
             <LinkList>
-                <LinkColumn>
+                {/* <LinkColumn>
                     <LinkTitle>Info:</LinkTitle>
                     <LinkItem>"------------------"</LinkItem>
                     <LinkTitle>Email:</LinkTitle>
@@ -35,7 +35,7 @@ const Footer = () => {
                     </LinkItem>
                     <LinkTitle>Info:</LinkTitle>
                     <LinkItem>"------------------"</LinkItem>
-                </LinkColumn>
+                </LinkColumn> */}
                 <Form />
             </LinkList>
             <SocialIconsContainer>

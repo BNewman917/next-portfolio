@@ -36,10 +36,60 @@ export const ImageContainer = styled.div`
     @media ${(props) => props.theme.breakpoints.lg} {
         padding: 0;
         margin-top: 40px;
+        background: radial-gradient(
+                32% 32% at 30% 50%,
+                rgba(148, 92, 215, 0.4) 0%,
+                rgba(122, 79, 180, 0.35) 20%,
+                rgba(94, 65, 142, 0.25) 42%,
+                rgba(71, 52, 111, 0.2) 60%,
+                rgba(22, 25, 40, 0) 100%
+            ),
+            radial-gradient(
+                50% 32% at 50% 50%,
+                rgba(255, 255, 255, 0.25) 0%,
+                rgba(208, 209, 212, 0.2) 20%,
+                rgba(157, 159, 165, 0.15) 42%,
+                rgba(22, 25, 40, 0) 100%
+            ),
+            radial-gradient(
+                32% 32% at 70% 50%,
+                rgba(56, 149, 203, 0.35) 0%,
+                rgba(49, 124, 170, 0.3) 20%,
+                rgba(42, 97, 134, 0.25) 42%,
+                rgba(36, 42, 105, 0.2) 60%,
+                rgba(22, 25, 40, 0) 100%
+            );
     }
+
     @media ${(props) => props.theme.breakpoints.md} {
         padding: 0;
         margin-top: 16px;
+    }
+
+    @media ${(props) => props.theme.breakpoints.xs} {
+        background: radial-gradient(
+                32% 52% at 30% 50%,
+                rgba(148, 92, 215, 0.4) 0%,
+                rgba(122, 79, 180, 0.35) 20%,
+                rgba(94, 65, 142, 0.25) 42%,
+                rgba(71, 52, 111, 0.2) 60%,
+                rgba(22, 25, 40, 0) 100%
+            ),
+            radial-gradient(
+                50% 52% at 50% 50%,
+                rgba(255, 255, 255, 0.25) 0%,
+                rgba(208, 209, 212, 0.2) 20%,
+                rgba(157, 159, 165, 0.15) 42%,
+                rgba(22, 25, 40, 0) 100%
+            ),
+            radial-gradient(
+                32% 22% at 70% 50%,
+                rgba(56, 149, 203, 0.35) 0%,
+                rgba(49, 124, 170, 0.3) 20%,
+                rgba(42, 97, 134, 0.25) 42%,
+                rgba(36, 42, 105, 0.2) 60%,
+                rgba(22, 25, 40, 0) 100%
+            );
     }
 `;
 

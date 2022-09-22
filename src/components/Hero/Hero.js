@@ -5,7 +5,7 @@ import { SectionTitle, TextGradient, SectionText } from "./HeroStyles";
 import AvatarCard from "../AvatarCard/AvatarCard";
 
 const Hero = () => (
-    <Section column nopadding>
+    <Section column>
         <SectionTitle>Brent Newman</SectionTitle>
         <AvatarCard />
         <TextGradient>Web Developer</TextGradient>

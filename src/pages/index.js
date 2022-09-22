@@ -5,9 +5,7 @@ import ProjectCard from "../components/ProjectCard/ProjectCard";
 import Technologies from "../components/Technologies/Technologies";
 import { Layout } from "../layout/Layout";
 import Resume from "../components/Resume/Resume";
-import { useStateContext } from "../context/StateContext";
 const Home = () => {
-    const { show } = useStateContext();
     return (
         <Layout>
             <Hero />
@@ -15,7 +13,7 @@ const Home = () => {
             <ProjectCard />
             <Technologies />
             <Acomplishments />
-            {show && <Resume />}
+            <Resume />
         </Layout>
     );
 };

@@ -4,7 +4,7 @@ export const FooterWrapper = styled.section`
     width: calc(100vw - 96px);
     max-width: 1040px;
     padding: 0 48px 0.5rem;
-    margin: 1rem auto;
+    margin: 8rem auto 0;
     box-sizing: content-box;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     background: radial-gradient(
@@ -34,7 +34,8 @@ export const FooterWrapper = styled.section`
 
 export const LinkList = styled.ul`
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    place-items: center;
     gap: 40px;
     padding: 40px 0 28px;
 

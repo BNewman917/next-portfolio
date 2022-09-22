@@ -20,7 +20,7 @@ const Resume = () => {
     };
 
     return (
-        <ResumeWrapper onClick={handleClick}>
+        <ResumeWrapper onClick={handleClick} className={show ? "show" : null}>
             <ResumeModal>
                 <Download href="/assets/Brent_Newman_Resume.pdf" download>
                     <HiOutlineDownload size={"30px"} />

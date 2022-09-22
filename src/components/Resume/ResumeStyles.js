@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const ResumeWrapper = styled.section`
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s linear, opacity 0.5s linear;
     width: 100%;
     min-height: 100vh;
     position: fixed;
@@ -11,6 +14,12 @@ export const ResumeWrapper = styled.section`
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.6);
+
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0.5s linear, opacity 0.5s linear;
+    }
 `;
 
 export const ResumeModal = styled.div`
@@ -18,7 +27,7 @@ export const ResumeModal = styled.div`
     z-index: 200;
     top: 5%;
     max-width: 1024px;
-    height: 98%;
+    max-height: 98%;
     background: white;
     border: 1px solid #ccc;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);

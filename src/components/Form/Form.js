@@ -50,7 +50,7 @@ const Form = () => {
 
     return (
         <FormContainer onSubmit={handleSubmit(onSubmit)}>
-            <ContactTitle>Send a message</ContactTitle>
+            <ContactTitle>Contact me</ContactTitle>
             <InputWrapper>
                 <ContactLabel htmlFor="fullname">Full name:</ContactLabel>
                 <ContactInput

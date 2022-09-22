@@ -19,7 +19,7 @@ export const InputWrapper = styled.div`
 `;
 
 export const ContactTitle = styled.h1`
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1rem;
     font-weight: 700;
     text-align: center;
