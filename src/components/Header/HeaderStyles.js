@@ -21,6 +21,52 @@ export const Container = styled.div`
     }
 `;
 
+export const TopButton = styled.button`
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #e1e2e3;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    animation: movebtn 5s linear infinite;
+    transition: all 0.5s linear;
+    hover: {
+        color: #e1e2e3;
+        opacity: 1;
+        cursor: pointer;
+        transform: scale(1.2) translateY(5px) translateX(-5px);
+    }
+
+    &.show {
+        display: block;
+    }
+
+    @keyframes movebtn {
+        0% {
+            transform: translateY(0px);
+        }
+        25% {
+            transform: translateY(10px);
+        }
+        50% {
+            transform: translateY(0px);
+        }
+        75% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+    }
+`;
+
 export const Div1 = styled.div`
     grid-area: 1 / 1 / 2 / 3;
     display: flex;

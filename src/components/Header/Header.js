@@ -1,14 +1,40 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useStateContext } from "../../context/StateContext";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { ImProfile } from "react-icons/im";
+import { TbArrowAutofitUp } from "react-icons/tb";
 
-import { Container, Div1, Div2, NavLink, SocialIcons } from "./HeaderStyles";
+import {
+    Container,
+    Div1,
+    Div2,
+    NavLink,
+    SocialIcons,
+    TopButton,
+} from "./HeaderStyles";
 import { ResumeIcon } from "../Footer/FooterStyles";
 
 const Header = () => {
+    const [showTopBtn, setShowTopBtn] = useState(false);
     const { setShow } = useStateContext();
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 90) {
+                setShowTopBtn(true);
+            } else {
+                setShowTopBtn(false);
+            }
+        });
+    }, []);
+
+    const goToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
 
     const resumeClick = () => {
         setShow(true);
@@ -16,6 +42,9 @@ const Header = () => {
 
     return (
         <Container>
+            <TopButton onClick={goToTop} className={showTopBtn ? "show" : null}>
+                <TbArrowAutofitUp size={"30px"} />
+            </TopButton>
             <Div1>
                 <li>
                     <Link href="#projects">
