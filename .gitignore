@@ -18,7 +18,6 @@
 # misc
 .DS_Store
 *.pem
-Brent_Newman_Resume.pdf
 
 # debug
 npm-debug.log*

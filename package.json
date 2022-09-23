@@ -1,5 +1,5 @@
 {
-  "name": "portfolio_nextjs",
+  "name": "next-portfolio",
   "license": "MIT",
   "version": "0.1.0",
   "private": true,
@@ -18,8 +18,24 @@
     "react-dom": "17.0.2",
     "react-hook-form": "^7.35.0",
     "react-icons": "^4.4.0",
+    "react-is": "^16.13.1",
     "react-use": "^17.4.0",
     "styled-components": "^5.3.0",
     "styled-normalize": "^8.0.7"
-  }
+  },
+  "description": "This will be my updated React portfolio.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BNewman917/next-portfolio.git"
+  },
+  "keywords": [
+    "nextjs",
+    "portfolio"
+  ],
+  "author": "Brent Newman",
+  "bugs": {
+    "url": "https://github.com/BNewman917/next-portfolio/issues"
+  },
+  "homepage": "https://github.com/BNewman917/next-portfolio#readme"
 }
