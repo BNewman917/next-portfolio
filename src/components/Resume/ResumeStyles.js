@@ -53,7 +53,9 @@ export const ResumeModal = styled.div`
 `;
 
 export const Download = styled.a`
-    position: fixed;
+    position: absolute;
+    top: 0;
+    right: 0;
     padding: 1rem;
     font-size: 2rem;
     color: #000;
@@ -62,7 +64,7 @@ export const Download = styled.a`
         color: #000;
         opacity: 1;
         cursor: pointer;
-        transform: scale(1.2) translateY(5px) translateX(5px);
+        transform: scale(1.2) translateY(5px) translateX(-5px);
     }
 `;
 
