@@ -5,6 +5,7 @@ import { ImProfile } from "react-icons/im";
 
 import { SocialIcons } from "../Header/HeaderStyles";
 import {
+    Copyright,
     FooterWrapper,
     LinkColumn,
     LinkItem,
@@ -51,6 +52,7 @@ const Footer = () => {
                     </ResumeIcon>
                 </SocialContainer>
             </SocialIconsContainer>
+            <Copyright>Copyright 2022 Brent Newman</Copyright>
         </FooterWrapper>
     );
 };

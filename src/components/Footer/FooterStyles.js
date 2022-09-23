@@ -160,3 +160,11 @@ export const ResumeIcon = styled.div`
         cursor: pointer;
     }
 `;
+
+export const Copyright = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.4);
+`;
