@@ -64,20 +64,22 @@ const Header = () => {
             </Div1>
             <Div2>
                 <SocialIcons
+                    header
                     href="https://github.com/bnewman917"
                     target="_blank"
                 >
                     <AiFillGithub size="3rem" />
                 </SocialIcons>
                 <SocialIcons
+                    header
                     href="https://www.linkedin.com/in/brent-newman917"
                     target="_blank"
                 >
                     <AiFillLinkedin size="3rem" />
                 </SocialIcons>
-                <ResumeIcon onClick={resumeClick}>
+                <SocialIcons header onClick={resumeClick}>
                     <ImProfile size="2.7rem" />
-                </ResumeIcon>
+                </SocialIcons>
             </Div2>
         </Container>
     );

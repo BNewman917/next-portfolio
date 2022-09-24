@@ -47,12 +47,12 @@ const Footer = () => {
                     <SocialIcons href="https://linkedin.com">
                         <AiFillLinkedin size="3rem" />
                     </SocialIcons>
-                    <ResumeIcon onClick={resumeClick}>
+                    <SocialIcons onClick={resumeClick}>
                         <ImProfile size="2.7rem" />
-                    </ResumeIcon>
+                    </SocialIcons>
                 </SocialContainer>
             </SocialIconsContainer>
-            <Copyright>Copyright 2022 Brent Newman</Copyright>
+            <Copyright>Copyright © 2022 Brent Newman</Copyright>
         </FooterWrapper>
     );
 };

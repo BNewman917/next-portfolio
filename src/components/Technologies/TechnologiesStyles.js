@@ -122,9 +122,10 @@ export const ListItem = styled.li`
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.2s linear;
     &:hover {
         transform: translateY(-5px) scale(1.1);
-        transition: all 0.2s ease-in-out;
+        transition: all 0.2s linear;
     }
 
     @media ${(props) => props.theme.breakpoints.md} {

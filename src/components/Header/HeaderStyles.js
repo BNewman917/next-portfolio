@@ -125,10 +125,11 @@ export const SocialIcons = styled.a`
     transition: 0.3s ease;
     color: white;
     border-radius: 50px;
-    padding: 8px;
+    padding: 5px;
     &:hover {
-        background-color: #212d45;
-        transform: scale(1.2);
+        transition: 0.3s ease;
+        transform: scale(1.2)
+            translateY(${(props) => (props.header ? "5px" : "-5px")});
         cursor: pointer;
     }
 `;
