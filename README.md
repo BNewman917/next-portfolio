@@ -2,6 +2,8 @@
 
 Visit [brentnewmanjs.com](https://brentnewmanjs.com/) to see!
 
+<img src='./public/images/portfolio.png' alt='portfolio img'> 
+
 #
 
 > Technologies & Skills:
@@ -23,6 +25,7 @@ This is the second iteration of my personal portfolio built with Next.js and dep
 2. In the project directory, run: ```npm run dev```
 
 This runs the app in development mode.
+
 Open 'http://localhost:3000' to view it in the browser. Page will reload when edits are made.
 
 ### Show your support
