@@ -13,19 +13,22 @@ import { AiOutlineClose } from "react-icons/ai";
 const Resume = () => {
     const { show, setShow } = useStateContext();
 
-    const handleClick = (e) => {
+    const wrapperClick = (e) => {
         if (e.currentTarget !== e.target) return;
-        e.preventDefault();
+        setShow(false);
+    };
+
+    const exitClick = (e) => {
         setShow(false);
     };
 
     return (
-        <ResumeWrapper onClick={handleClick} className={show ? "show" : null}>
+        <ResumeWrapper onClick={wrapperClick} className={show ? "show" : null}>
             <ResumeModal>
                 <Download href="/assets/Brent_Newman_Resume.pdf" download>
                     <HiOutlineDownload size={"30px"} />
                 </Download>
-                <Exit onClick={handleClick}>
+                <Exit onMouseDown={exitClick}>
                     <AiOutlineClose size={"30px"} />
                 </Exit>
                 <Img src="/images/resume.png" alt="resume" />

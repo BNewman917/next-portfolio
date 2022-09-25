@@ -60,32 +60,33 @@ export const Download = styled.a`
     font-size: 2rem;
     color: #000;
     transition: 0.4s ease;
-    &:hover {
-        color: #000;
-        opacity: 1;
-        cursor: pointer;
-        transform: scale(1.2) translateY(5px) translateX(-5px);
+
+    @media (hover: hover) {
+        &:hover {
+            color: #000;
+            opacity: 1;
+            cursor: pointer;
+            transform: scale(1.2) translateY(5px) translateX(-5px);
+        }
+    }
+
+    @media ${(props) => props.theme.breakpoints.lg} {
+        margin-right: 5rem;
     }
 `;
 
-export const Exit = styled.span`
+export const Exit = styled.a`
     display: none;
-    position: fixed;
-    top: 1rem;
-    right: 2rem;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
     padding: 1rem;
     font-size: 2rem;
     color: #000;
     transition: 0.4s ease;
-    &:hover {
-        color: #000;
-        opacity: 1;
-        cursor: pointer;
-        transform: scale(1.2) translateY(5px) translateX(5px);
-    }
 
     @media ${(props) => props.theme.breakpoints.lg} {
-        padding: 0;
         display: block;
     }
 `;
