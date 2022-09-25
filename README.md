@@ -1,15 +1,30 @@
-# Updated Personal Portfolio
+# My Personal Portfolio
 
-This will be my updated React portfolio.
+Visit [brentnewmanjs.com](https://brentnewmanjs.com/) to see!
 
-## Demo
+#
 
-If you'd like to check it out, clone this repo and run:
+> Technologies & Skills:
+- HTML / CSS / JS
+- React
+- NextJS
+- [styled-components](https://styled-components.com/docs)
+- [SendGrid](https://sendgrid.com/)
+- Responsive Design
 
-```npm install```
+## About
 
-```npm run dev```
+This is the second iteration of my personal portfolio built with Next.js and deployed to Vercel.
 
-then open the project by going to 'localhost:3000'.
+## Installation and Setup
 
-### Stay tuned for more!
+1. Installation: ```npm install```
+
+2. In the project directory, run: ```npm run dev```
+
+This runs the app in development mode.
+Open 'http://localhost:3000' to view it in the browser. Page will reload when edits are made.
+
+### Show your support
+
+Give it a :star: if you enoyed this website! You can contact me through my portfolio or on [LinkedIn](www.linkedin.com/in/brent-newman917) if you'd like to connect, provide feedback, or hire me!
