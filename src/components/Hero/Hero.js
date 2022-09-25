@@ -1,14 +1,14 @@
 import React from "react";
 
 import { Section } from "../../styles/GlobalComponents";
-import { SectionTitle, TextGradient, SectionText } from "./HeroStyles";
+import { SectionTitle, JobTitle, SectionText } from "./HeroStyles";
 import AvatarCard from "../AvatarCard/AvatarCard";
 
 const Hero = () => (
     <Section column>
         <SectionTitle name>Brent Newman</SectionTitle>
         <AvatarCard />
-        <TextGradient>Web Developer</TextGradient>
+        <JobTitle>Web Developer</JobTitle>
         <SectionText>
             I'm a web developer with a focus on the MERN stack but still
             exploring other technologies and frameworks that catch my interest!

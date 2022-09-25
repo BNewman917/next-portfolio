@@ -83,14 +83,6 @@ export const technologies = [
         text: `NextJS`,
     },
     {
-        icon: <AiOutlineHtml5 size={36} />,
-        text: `HTML`,
-    },
-    {
-        icon: <IoLogoCss3 size={36} />,
-        text: `CSS`,
-    },
-    {
         icon: <IoLogoJavascript size={36} />,
         text: `JavaScript`,
     },

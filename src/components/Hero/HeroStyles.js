@@ -18,17 +18,13 @@ export const LeftSection = styled.div`
     }
 `;
 
-export const TextGradient = styled.span`
+export const JobTitle = styled.span`
     font-weight: 800;
     font-size: 36px;
     width: max-content;
     max-width: 100%;
     margin: 3rem auto;
-    background: linear-gradient(
-        121.57deg,
-        #ffffff 18.77%,
-        rgba(255, 255, 255, 0.66) 60.15%
-    );
+    background: rgba(225, 226, 227, 0.8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

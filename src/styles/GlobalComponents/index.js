@@ -29,11 +29,7 @@ export const SectionTitle = styled.h2`
     line-height: ${(props) => (props.main ? "72px" : "56px")};
     width: max-content;
     max-width: 100%;
-    background: linear-gradient(
-        121.57deg,
-        #ffffff 18.77%,
-        rgba(255, 255, 255, 0.66) 60.15%
-    );
+    background: rgba(225, 226, 227, 0.8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 16px;
