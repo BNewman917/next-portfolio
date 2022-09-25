@@ -6,7 +6,7 @@ import AvatarCard from "../AvatarCard/AvatarCard";
 
 const Hero = () => (
     <Section column>
-        <SectionTitle name>Brent Newman</SectionTitle>
+        <SectionTitle>Brent Newman</SectionTitle>
         <AvatarCard />
         <JobTitle>Web Developer</JobTitle>
         <SectionText>

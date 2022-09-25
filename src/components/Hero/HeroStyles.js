@@ -22,6 +22,7 @@ export const JobTitle = styled.span`
     font-weight: 800;
     font-size: 36px;
     letter-spacing: -0.05em;
+    align-self: center;
     width: max-content;
     max-width: 100%;
     margin: 3rem auto;
