@@ -84,6 +84,8 @@ export const BlogTitle = styled.h1`
 
 export const BlogText = styled.p`
     font-size: 1.4rem;
+    line-height: 1.85;
+    margin: 1.4rem 0;
     color: rgba(228, 230, 231, 0.8);
     @media ${(props) => props.theme.breakpoints.md} {
         display: flex;
@@ -138,4 +140,11 @@ export const TagList = styled.ul`
 export const Tag = styled.li`
     color: #d8bfbf;
     font-size: 1.5rem;
+    transition: transform 0.2s ease;
+
+    &:hover {
+        color: #e4e6e7;
+        transition: transform 0.2s ease;
+        transform: scale(1.05);
+    }
 `;
