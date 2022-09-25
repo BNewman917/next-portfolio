@@ -27,6 +27,7 @@ export const SectionTitle = styled.h2`
     font-weight: 800;
     font-size: ${(props) => (props.main ? "65px" : "56px")};
     line-height: ${(props) => (props.main ? "72px" : "56px")};
+    letter-spacing: -0.05em;
     width: max-content;
     max-width: 100%;
     background: rgba(225, 226, 227, 0.8);

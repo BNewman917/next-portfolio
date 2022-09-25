@@ -21,6 +21,7 @@ export const LeftSection = styled.div`
 export const JobTitle = styled.span`
     font-weight: 800;
     font-size: 36px;
+    letter-spacing: -0.05em;
     width: max-content;
     max-width: 100%;
     margin: 3rem auto;
@@ -45,7 +46,8 @@ export const JobTitle = styled.span`
 export const SectionTitle = styled.h2`
     font-weight: 900;
     font-size: 78px;
-    font-family: "Titillium Web", monospace;
+    font-family: "Pacifico", cursive;
+    letter-spacing: 0.04em;
     line-height: 56px;
     margin: 0 auto 3rem;
     background: #e1e2e3;
@@ -69,7 +71,7 @@ export const SectionTitle = styled.h2`
 export const SectionText = styled.p`
     text-align: center;
     font-size: 24px;
-    line-height: 40px;
+    line-height: 1.7;
     font-weight: 300;
     margin: 2rem auto 0;
     padding-bottom: 2rem;
