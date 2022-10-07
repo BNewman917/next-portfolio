@@ -32,6 +32,15 @@ export default class MyDocument extends Document {
         return (
             <Html lang="en-GB">
                 <Head>
+                    <meta name="author" content="Brent Newman"></meta>
+                    <meta
+                        name="description"
+                        content="Brent Newman's portfolio website"
+                    ></meta>
+                    <meta
+                        name="image"
+                        content="./public/images/thumbnail.png"
+                    ></meta>
                     <link
                         href="https://fonts.googleapis.com/css2?family=Pacifico:wght@400&display=swap"
                         rel="stylesheet"
